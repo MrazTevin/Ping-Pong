@@ -29,3 +29,17 @@ div.container-fluid {
   padding-top: 0cm;
 }
 * { color:#E44424; text-decoration: none;}
+.orange {
+  background-color: :#E44424;
+}
+div.a {
+  position: relative;
+  float: left;
+  left:50%
+  list-style-type:none;
+  margin:0;
+}
+.btn {
+  position: absolute;
+  margin-left: 0;
+}
