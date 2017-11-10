@@ -5,3 +5,16 @@
   width:100%;
   padding-top: 100px;
 }
+.text{
+  text-align: center;
+  font-size: 70px;
+  height:auto;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 50px;
+}
+@media only screen (max-width: 768px) {
+  {
+  width:100%;
+}
+}
