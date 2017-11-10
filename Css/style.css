@@ -22,3 +22,10 @@ div.container-fluid {
   padding-left: 0;
   padding-right:0;
 }
+.introduction {
+  background-color:#A2AB58;
+  text-align:center;
+  color:#E44424;
+  padding-top: 10cm;
+}
+* { color:#E44424; text-decoration: none;}
