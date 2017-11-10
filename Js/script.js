@@ -51,6 +51,10 @@ this.el.innerHTML ='<span class="wrap">'+this.txt+'</span>'
   css.innerHTML =".typewrite> .wrap { border-right: 0.08em solid ##E44424}";
 
 };
+function toggleSidebar(ref) {
+  ref.classList.toggle('active');
+  document.getElementById('sidebar').classList.toggle('active');
+}
 
 
 
