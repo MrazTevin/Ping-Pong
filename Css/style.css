@@ -43,3 +43,47 @@ div.a {
   position: absolute;
   margin-left: 0;
 }
+footer.myfooter {
+  background: #222;
+  border-top: 4px solid #b78c33;
+  height: auto;
+  width: 100%;
+}
+footer.text {
+  margin: 0 auto;
+  margin-top: 40px;
+  max-width: 1170px;
+  text-align: center;
+  }
+  footer.text p {
+    font-size: 13px;
+    color: #999;
+    margin-top: 30px;
+  }
+  footer.text .social-media {
+    margin-top: 15px;
+  }
+  footer.text .social-meida ul li a {
+    display: inline-block;
+    width: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #b78c33;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+  }
+  footer.text .social-media ul li a:hover {
+    background: #b78c33;
+    color: #fff;
+    border-color: #b78c33;
+  }
+  footer.copyyright {
+    margin-top:15px;
+    background: #111;
+    padding: 7px 0;
+    color:#999;
+  }
+  footer.copyyright p {
+    margin: 0;
+    padding: 0;
+  }
