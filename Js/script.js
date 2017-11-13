@@ -56,3 +56,5 @@ function toggleSidebar(ref) {
   document.getElementById('sidebar').classList.toggle('active');
 }
 // i will imsert some simple jquerry code here
+var input = document.getElementById('inputnumber');
+console.log(input.value);

@@ -44,7 +44,7 @@ div.a {
   margin-left: 0;
 }
 footer.myfooter {
-  background: #222;
+  background: orange;
   border-top: 4px solid #b78c33;
   height: auto;
   width: 100%;
@@ -73,7 +73,7 @@ footer.text {
     border: 1px solid rgb(255, 255, 255, 0.3);
   }
   footer.text .social-media ul li a:hover {
-    background: #b78c33;
+    background-color: #b78c33;
     color: #fff;
     border-color: #b78c33;
   }
