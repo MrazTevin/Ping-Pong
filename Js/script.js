@@ -55,8 +55,4 @@ function toggleSidebar(ref) {
   ref.classList.toggle('active');
   document.getElementById('sidebar').classList.toggle('active');
 }
-
-
-
-
-    //my typewritecss in Javascript
+// i will imsert some simple jquerry code here

@@ -87,4 +87,9 @@ footer.text {
     margin: 0;
     padding: 0;
   }
-  
+  .cliackable {
+    cursor: pointer;
+  }
+  #hobby {
+    display:none;
+  }
