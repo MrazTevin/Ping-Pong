@@ -4,7 +4,6 @@
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width,  initial-scale=1.0">
     <title>PingPong</title>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="Css/style.css" type="text/css">
     <link rel="font" type="text/css" href="//fonts.googleapis.com/css?family=Lobster">
@@ -12,83 +11,98 @@
 
   </head>
   <body>
-    <div class="container-fluid" style="padding-top:0;">
+    <div class="container-fluid" style="padding-top:0;" >
       <div class="page-header">
-            <h1 class="text" style="font-family:lobster; font-style:italic;">PingPong</h1>
+        <h1 class="text" style="font-family:lobster; font-style:italic;">PingPong</h1>
       </div>
     </div>
-      <div class="introduction">
-        <h2>
-          <a href="" class="typewrite" data-period="4000" data-type='[ "Hello Citizens, I am PingPong have fun playing me.", "I love to Develop.", "Hope you enjoy playing PingPong." ]'>
+    <div class="introduction">
+      <h2>
+        <a href="" class="typewrite" data-period="4000" data-type='[ "Hello Citizens, I am PingPong have fun playing me.", "I love to Develop.", "Hope you enjoy playing PingPong." ]'>
           <span class="wrap"></span>
-          </a>
+        </a>
        </h2>
     </div>
-    <!--This is my toggleSIdebar section-->
-    <div class="container">
-      <div class="sidebar orange bar-block" id="sidebar" style="width:25% background:orange;">
-        <h2 class="bar-item"></h2>
-        <li><a href="#" class="bar-item button">Home</a></li>
-        <li><a href="#" class="bar-item button">Play Rules</a></li>
-        <li><a href="#" class="bar-item button">Contact</a></li>
-        <li><a href="#" class="bar-item button">About</a></li>
-
+    <div class="row">
+      <div class="col-md-3">
+        <ul class="nav navbar sidebar text-center" style="background-color:#ede; height:100%">
+          <li style="border-bottom:1px solid #fff;" id="showme"><a href="#">About</a></li>
+          <li style="border-bottom:1px solid #fff;" id="display"><a href="#">Instructions</a></li>
+        </ul>
       </div>
+      <div style="background-color:#ede; padding:10px;" class="" id="hidden">
+        <h1 style="text-decoration:underline;">About</h1>
+          <p>PingPong is a simple game that tests divisibility of numbers.When a user inputs a number, it gives out the expected output
+           The results are displayed repeatedly.The goal of the game is to replace numbers divisible by 3, 5 and 15 using either a ping,pong or pingpong
+          </p>
+       </div><br>
     </div>
-    <!--this is my page content-->
-    <form class="form-horizontal">
-      <div style="margin-left:25%">
-        <div class="container">
-          <div class="form-group">
-            <div class="col-sm-8">
-              <input type="number" class="form-control" id="inputnumber">
+      <div style="background-color:#ede; padding:10px;" class="" id="Thidden">
+        <h1 style="text-decoration:underline;">Instructions</h1>
+          <p>
+             Input any <strong>number</strong> eg 5.The number should be able to diplay the following results.
+             <ul>
+               <li>Ping if the number is divisible by 3</li>
+               <li>Pong if the number is divisble by 5</li>
+               <li>Pingpong if the number is divisible by 15</li>
+             </ul>
+          </p>
+</div><br>
+     </div>
+     <form class="form-horizontal" id="myform" onsubmit="return false;">
+        <div style="margin-left:25%">
+          <div class="container">
+            <div class="form-group">
+              <div class="col-sm-8">
+                <input type="number" class="form-control" id="mynumber">
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-offset-2 col-sm-8">
-              <a href="#inputnumber" target=".form-control">
-              <button type="submit" value="submit" class="btn btn-default button" id="play" style="vertical-align:left;"><span class="cliackable">PLAY ME</span></button>
-            </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>
-
-    <!--this will be my footer section-->
-    <footer class="my-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="text">
-              <p>Share your scores online with friends</p>
-                <div class="social-media">
-                  <ul class="list-inline banner-social-button">
-                    <li>
-                            <a href="https://www.facebook.com" class="fa fa-facebook" data-toggle="tooltip" title="facebook" target="_blank"></a>
-                    </li>
-                    <li>
-                            <a href="https://www.twitter.com" class="fa fa-twitter" data-toggle="tooltip" title="twitter" target="_blank"></a>
-                    </li>
-                    <li>
-                            <a href="https://www.snapchat.com" class="fa fa-snapchat" data-toggle="tooltip" title="snapchat" target="_blank"></a>
-                    </li>
-                    <li>
-                            <a href="https://www.instagram.com" class="fa fa-instagram" data-toggle="tooltip" title="instagram" target="_blank"></a>
-                    </li>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-8">
+                <a href="#inputnumber" target=".form-control">
+                  <button type="submit" id="submit" class="btn btn-default button"  style="vertical-align:left;"><span class="cliackable">PLAY ME</span></button>
+                </a>
+                  <ul id="list">
                   </ul>
-                </div>
               </div>
             </div>
-            <div class="container copyyright">
-              <div class="row">
-                <div class="col-sm-6">
-                  <p>Copyright © 2017. MIlla Tevin.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+         </div>
+       </div>
+     </form>
+    <!--this will be my footer section-->
+     <footer class="my-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="text">
+                <p>Share your scores online with friends</p>
+                  <div class="social-media">
+                    <ul class="list-inline banner-social-button">
+                      <li>
+                        <a href="https://www.facebook.com" class="fa fa-facebook" data-toggle="tooltip" title="facebook" target="_blank"></a>
+                      </li>
+                      <li>
+                        <a href="https://www.twitter.com" class="fa fa-twitter" data-toggle="tooltip" title="twitter" target="_blank"></a>
+                      </li>
+                      <li>
+                        <a href="https://www.snapchat.com" class="fa fa-snapchat" data-toggle="tooltip" title="snapchat" target="_blank"></a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com" class="fa fa-instagram" data-toggle="tooltip" title="instagram" target="_blank"></a>
+                      </li>
+                    </ul>
+                  </div>
+               </div>
+             </div>
+             <div class="container copyyright">
+               <div class="row">
+                 <div class="col-sm-6">
+                   <p>Copyright © 2017. MIlla Tevin.</p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
       </footer>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
