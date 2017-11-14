@@ -56,5 +56,49 @@ function toggleSidebar(ref) {
   document.getElementById('sidebar').classList.toggle('active');
 }
 // i will imsert some simple jquerry code here
-var input = document.getElementById('inputnumber');
-console.log(input.value);
+
+
+
+  var userArray = [];
+function divisibility (input) {
+  userArray=[];
+
+  var userinput = parseInt(input);
+
+  for (var i = 0; i <= input; i++) {
+    if (i % 3 == 0 && i % 5 ==0) {
+      userArray.push('Ping-Pong');
+    } else if (i % 3 == 0) {
+      userArray.push('Ping');
+    } else if (i % 5 == 0) {
+      userArray.push('Pong');
+    } else {
+      userArray.push(i);
+    }
+    // $('#list').push("<li>" + i);
+  };
+
+  return userArray;
+};
+$(document).ready(function(){
+  $('button#submit').click(function() {
+    $("#list").text("");
+     var input =divisibility( $('#mynumber').val());
+
+  console.log(userArray);
+
+  for (var i = 0; i < userArray.length; i++) {
+        $("#list").append("<li>"+userArray[i]+"</li>");
+  }
+  });
+
+// different
+  $("#showme").click(function() {
+    $("#hidden").toggle();
+  });
+  // Instructions
+  $("#display").click(function() {
+    $("#Thidden").toggle();
+  });
+
+});
